@@ -1,3 +1,36 @@
-<p>
-  setup-wizard works!
-</p>
+<app-sidebar-layout>
+
+  <app-page-header>
+    <h1>Payrolls Wizard <small>v 0.1</small></h1>
+  </app-page-header>
+
+
+  <app-page-content>
+    <app-box>
+      <app-box-body>
+        <tabset [justified]="true" class="nav-tabs-custom">
+          <tab>
+            <template tabHeading>
+              <i class="fa fa-building"></i> Company
+            </template>
+            <app-company-form></app-company-form>
+          </tab>
+
+          <tab>
+            <template tabHeading>
+              <i class="fa fa-users"></i> Employees
+            </template>
+            I've got an HTML heading, and a select callback. Pretty cool!
+          </tab>
+
+          <tab>
+            <template tabHeading>
+              <i class="fa fa-check-square"></i> Sumary
+            </template>
+            I've got an HTML heading, and a select callback. Pretty cool!
+          </tab>
+        </tabset>
+      </app-box-body>
+    </app-box>
+  </app-page-content>
+</app-sidebar-layout>
