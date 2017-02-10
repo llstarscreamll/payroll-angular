@@ -4,7 +4,7 @@ import { PayrollRoutingModule } from './payroll-routing.module';
 // ng2-bootstrap
 import { TabsModule } from 'ng2-bootstrap/tabs';
 // AdminLTE Shell
-import { AdminLTEShellModule as Shell } from './../../shells/adminLTE/admin-lte.module';
+import { InspiniaShellModule as Shell } from './../../shells/inspinia/inspinia.module';
 // Payroll Components
 import { SetupWizardComponent } from './components/setup-wizard/setup-wizard.component';
 // Company Components imports
