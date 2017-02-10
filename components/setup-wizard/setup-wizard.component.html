@@ -4,35 +4,37 @@
     <h1>Payrolls Wizard <small>v 0.1</small></h1>
   </app-page-header>
 
-
   <app-page-content>
-    <app-box>
-      <app-box-body>
-        <tabset [justified]="true" class="nav-tabs-custom">
-          <tab>
-            <template tabHeading>
-              <i class="fa fa-building"></i> Company
-            </template>
+
+    <tabset [justified]="false" class="tabs-container">
+      <tab>
+        <template tabHeading>
+          <i class="fa fa-building"></i> Company
+        </template>
+          <div class="panel-body">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
               <app-company-form></app-company-form>
             </div>
-          </tab>
+        </div>
+      </tab>
 
-          <tab>
-            <template tabHeading>
-              <i class="fa fa-users"></i> Employees
-            </template>
-            I've got an HTML heading, and a select callback. Pretty cool!
-          </tab>
+      <tab>
+        <template tabHeading>
+          <i class="fa fa-users"></i> Employees
+        </template>
+        I've got an HTML heading, and a select callback. Pretty cool!
+      </tab>
 
-          <tab>
-            <template tabHeading>
-              <i class="fa fa-check-square"></i> Sumary
-            </template>
-            I've got an HTML heading, and a select callback. Pretty cool!
-          </tab>
-        </tabset>
-      </app-box-body>
-    </app-box>
+      <tab>
+        <template tabHeading>
+          <i class="fa fa-check-square"></i> Sumary
+        </template>
+        I've got an HTML heading, and a select callback. Pretty cool!
+      </tab>
+    </tabset>
+
+    <div class="clearfix"></div>
+
   </app-page-content>
+
 </app-sidebar-layout>
